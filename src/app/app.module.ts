@@ -11,7 +11,7 @@ import {
   ParentComponent,
   ChildAComponent,
   ChildBComponent,
-  GrandChildAComponent,
+  GrandChildAComponent
 } from './demos/change-detection';
 import { TemplatesModule } from './demos/basics/templates';
 
@@ -30,7 +30,7 @@ import {
   NgClassComponent,
   ClassBindingDemoComponent,
   MultipleClassBindingDemoComponent,
-  NgClassBindingDemoComponent,
+  NgClassBindingDemoComponent
 } from './demos/directives/attribute/ng-class';
 import { PipesDemoComponent } from './demos/template-syntax/pipes';
 import { InputPropertyModule } from './demos/components/input-property';
@@ -43,12 +43,13 @@ import { ReactiveFormsValidationMessagesModule } from './demos/forms/reactive-fo
 import { RegisterInjectServiceModule } from './demos/services/register-inject';
 import {
   ReactiveFormsValidationComponent,
-  ReactiveFormsValidationModule,
+  ReactiveFormsValidationModule
 } from './demos/forms/reactive-forms-validation';
 import { InjectableServiceModule } from './demos/services/injectable';
 import MoviesModule from './demos/routing/routing-advanced';
 import { MyApplicationModule as MyExportsApplicationModule } from './demos/modules/module-basics';
 import { JsonPipeComponent } from './demos/template-syntax/pipe-json';
+import { RxJSDemosComponent } from './demos/rxjs/rxjs-demos.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { JsonPipeComponent } from './demos/template-syntax/pipe-json';
     StylingInlineComponent,
     StylingExternalComponent,
     JsonPipeComponent,
+    RxJSDemosComponent
   ],
   imports: [
     BrowserModule,
@@ -90,9 +92,9 @@ import { JsonPipeComponent } from './demos/template-syntax/pipe-json';
     RegisterInjectServiceModule,
     InjectableServiceModule,
     MoviesModule,
-    MyExportsApplicationModule,
+    MyExportsApplicationModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

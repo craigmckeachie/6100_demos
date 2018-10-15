@@ -32,9 +32,10 @@ import { MovieListComponent } from './demos/routing/routing-advanced';
 import { PageComponent as ExportModulePageComponent } from './demos/modules/module-basics';
 import {
   InjectableServiceModule,
-  InjectableServiceComponent,
+  InjectableServiceComponent
 } from './demos/services/injectable';
 import { JsonPipeComponent } from './demos/template-syntax/pipe-json';
+import { RxJSDemosComponent } from './demos/rxjs/rxjs-demos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'demos', pathMatch: 'full' },
@@ -61,36 +62,37 @@ const routes: Routes = [
   { path: 'lifecycle-hooks', component: LifecycleHooksParentComponent },
   { path: 'reactive-forms-binding', component: ReactiveFormsBindingComponent },
   { path: 'module-exports', component: ExportModulePageComponent },
+  { path: 'rxjs', component: RxJSDemosComponent },
   {
     path: 'register-inject-service',
-    component: RegisterInjectServiceComponent,
+    component: RegisterInjectServiceComponent
   },
   {
     path: 'injectable',
-    component: InjectableServiceComponent,
+    component: InjectableServiceComponent
   },
   {
     path: 'reactive-forms-validation',
-    component: ReactiveFormsValidationComponent,
+    component: ReactiveFormsValidationComponent
   },
   {
     path: 'reactive-forms-validation',
-    component: ReactiveFormsValidationComponent,
+    component: ReactiveFormsValidationComponent
   },
   {
     path: 'reactive-forms-validation-messages',
-    component: ReactiveFormsValidationMessagesComponent,
+    component: ReactiveFormsValidationMessagesComponent
   },
 
   {
     path: 'company',
-    loadChildren: './demos/routing/routing-basics#CompanyWebSiteModule',
-  },
+    loadChildren: './demos/routing/routing-basics#CompanyWebSiteModule'
+  }
 ];
 
 @NgModule({
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  declarations: [DemoListComponent],
+  declarations: [DemoListComponent]
 })
 export class AppRoutingModule {}
