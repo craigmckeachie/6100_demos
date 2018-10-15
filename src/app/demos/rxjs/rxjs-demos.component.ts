@@ -38,7 +38,6 @@ export class RxJSDemosComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    const button = document.querySelector('button');
-    fromEvent(button, 'click').subscribe(x => console.log(x));
+    of(1, 2, 3).subscribe(x => console.log(x));
   }
 }
